@@ -1,0 +1,42 @@
+
+// function showChat(chatId) {
+//   var msgId = document.getElementById("user-chat");
+//   var curId = localStorage.getItem("curId");
+//   const q = query(collection(db, "messages"), orderBy("time"), where("chatId", "==", chatId));
+
+//   // Clear existing messages
+//   msgId.innerHTML = "";
+
+//   // Add the listener using onSnapshot only once
+//   const unsubscribe = onSnapshot(q, (querySnapshot) => {
+//     msgId.innerHTML = ""; // Clear the container before rendering messages
+//     querySnapshot.forEach((doc) => {
+//       if (curId === doc.data().sender) {
+//         msgId.innerHTML += `
+//           <div class="right"> 
+//             <p>${doc.data().msg}</p>
+//             <span></span>
+//           </div>
+//         `;
+//       } else {
+//         msgId.innerHTML += `
+//           <div class="left">
+//             <p>${doc.data().msg}</p>
+//             <span></span>
+//           </div>
+//         `;
+//       }
+//     });
+//   });
+
+//   // You can store the unsubscribe function in a global variable
+//   // and call it when you want to stop listening to changes in the chat.
+//   // For example, when you switch to another chat, you can call `unsubscribe()`.
+// }
+
+
+// CHmvYnqIrXQ9IclDTlV98hNMH8J2qIz7jfjmfVdduwd2ZA248zwHGJV2
+
+// msgId.innerHTML+=`
+
+// `
